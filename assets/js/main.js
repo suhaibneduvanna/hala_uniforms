@@ -1,9 +1,4 @@
-/**
-* Template Name: Rapid - v4.9.1
-* Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -162,10 +157,13 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
+    
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+        itemSelector: '.portfolio-item',
+        transitionDuration: 0,
+       
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -237,7 +235,7 @@
     speed: 400,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 1500,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
